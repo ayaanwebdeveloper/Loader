@@ -1,0 +1,44 @@
+html,body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 80vh;
+    height: 80vh;
+    border: 16px solid white;
+    margin-top: 10vh;
+    border-radius: 50%;
+    box-shadow: 5px 0px 20000px red;
+    animation-name: load;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+@keyframes load {
+    to{
+        rotate: 360deg;
+    }
+    0%{
+        border: 16px solid red;
+        rotate: 360deg;
+    }
+    25%{
+        border  : 16px solid green;
+        rotate: 360deg;
+    }
+    40%{
+        border: 16px solid blue;
+        rotate: 360deg;
+    }
+    55%{
+        border : 16px solid red;
+        rotate: 360deg;
+    }
+    85%{
+        border: 16px solid green;
+        rotate: 360deg;
+    }
+    100%{
+        rotate: 360deg;
+    }}
